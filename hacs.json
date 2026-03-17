@@ -1,0 +1,10 @@
+{
+  "name": "慧尖语音助手",
+  "render_readme": true,
+  "filename": "huijian_yuyin.zip",
+  "hide_default_branch": false,
+  "homeassistant": "2023.1.0",
+  "country": ["CN"],
+  "content_in_root": false,
+  "zip_release": false
+}
