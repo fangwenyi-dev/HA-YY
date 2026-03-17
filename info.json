@@ -1,0 +1,6 @@
+{
+  "name": "HA-YY",
+  "description": "慧尖语音助手 - Home Assistant 自定义集成",
+  "homepage": "https://github.com/fangwenyi-dev/HA-YY",
+  "default_branch": "main"
+}
