@@ -8,6 +8,7 @@ Home Assistant 自定义集成，用于控制慧尖ESP32语音助手设备。
 - ✅ 支持手动输入设备IP配置
 - ✅ 支持密码认证连接
 - ✅ 支持Noise加密通信（PSK）
+- ✅ 支持明文连接模式（适用于未加密的 ESP32 固件）
 - ✅ 支持多种LLM提供商（小智云、Ollama、HA Cloud、自定义API）
 - ✅ 支持TTS语音合成
 - ✅ 支持STT语音识别
@@ -17,7 +18,7 @@ Home Assistant 自定义集成，用于控制慧尖ESP32语音助手设备。
 ## 安装方法
 
 ### 方法 1：通过 HACS 安装（推荐）
-1. 在 HACS 中添加自定义仓库，仓库地址：https://github.com/fangwenyi-dev/ha-huijian-yuyin
+1. 在 HACS 中添加自定义仓库，仓库地址：https://github.com/fangwenyi-dev/HA-YY
 2. 搜索并安装 "慧尖语音助手"
 3. 重启 Home Assistant
 
@@ -116,6 +117,12 @@ logger:
 - **设备要求**：运行慧尖语音ESP32固件的ESP32设备
 
 ## 版本历史
+
+### v0.0.3
+- 优化设备连接管理，修复命令发送失败问题
+- 改进 WebSocket 连接稳定性
+- 支持明文连接模式（适用于未加密的 ESP32 固件）
+- 修复 MCP URL 配置保存位置问题
 
 ### v0.0.2
 - 更新集成配置

@@ -1,6 +1,7 @@
 {
   "domain": "huijian_yuyin",
   "name": "慧尖语音助手",
+  "handlers": ["huijian_yuyin.config_flow"],
   "brand": {
     "integrations": [
       {
@@ -9,7 +10,7 @@
       }
     ]
   },
-  "after_dependencies": ["hassio", "zeroconf", "tag", "mcp_server"],
+  "after_dependencies": ["hassio", "tag"],
   "codeowners": ["@huijian"],
   "config_flow": true,
   "dependencies": [
@@ -32,6 +33,6 @@
     "bleak-esphome>=3.6.0",
     "opuslib_next>=1.0.0"
   ],
-  "version": "0.0.2",
+  "version": "0.0.3",
   "zeroconf": []
 }
